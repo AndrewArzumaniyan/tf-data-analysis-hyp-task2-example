@@ -5,7 +5,7 @@ from scipy.stats import kruskal
 chat_id = 938988157 # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array, y: np.array) -> bool:
-    alpha = 0.03
+    alpha = 0.07
     pvalue = kruskal(x, y).pvalue
     
     return pvalue < alpha 
